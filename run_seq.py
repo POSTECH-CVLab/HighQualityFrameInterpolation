@@ -9,9 +9,6 @@ from torch.autograd import Variable
 
 from models.models import FullNet3
 
-from frame2vid import frame2vid
-from frame2vid_original import frame2vid_original
-
 from PIL import Image
 import numpy as np
 from scipy import signal

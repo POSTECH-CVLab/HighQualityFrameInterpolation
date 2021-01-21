@@ -1,5 +1,7 @@
 .DS_Store
 __pycache__
-/data
-/custom
-/models/PWCNet/correlation_package_pytorch1_0/build
+data
+custom
+models/PWCNet/correlation_package_pytorch1_0/build/
+models/PWCNet/correlation_package_pytorch1_0/dist/
+models/PWCNet/correlation_package_pytorch1_0/correlation_cuda.egg-info/

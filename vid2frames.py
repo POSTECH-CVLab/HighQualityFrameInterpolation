@@ -2,8 +2,8 @@ import os
 import cv2
 import pdb
 
-readDir = './custom/'
-writeDir = './custom/'
+readDir = './data/custom/'
+writeDir = './data/custom/'
 
 vidList = []
 for f in os.listdir(readDir):
