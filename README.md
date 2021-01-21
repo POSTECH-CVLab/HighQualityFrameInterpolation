@@ -1,4 +1,4 @@
-# High-quality Frame Interpolation via Tridirectional Inference
+## High-quality Frame Interpolation via Tridirectional Inference
 
 This is an official source code of Choi et al., High-quality Frame Interpolation via Tridirectional Inference, WACV 2021 paper.
 
@@ -7,12 +7,12 @@ This is an official source code of Choi et al., High-quality Frame Interpolation
 </p>
 
 
-# Features
+## Features
 - Simple and effective video frame interpolation approach using **three consequent video frames**.
 - Data-driven approach to interpolate moving objects.
 - Generalizes well to high-resolution contents.
 
-# Requirements
+## Requirements
 We tested our approach using the below environment. We recommend using docker and anaconda to avoid any hassles. (Tested with 4x Nvidia Titan X (12GB))
 
 - Cuda 10.0
@@ -63,15 +63,15 @@ cd models/PWCNet/correlation_package_pytorch1_0/ && ./build.sh
     train.py
     :
 ```
-6. To add flying objects onto downloaded videos, run ```python seg_obj.py```. It crops image patches of objects from PASCAL VOC and save them into ```data/VOCdevkit/VOC2012/ObjSegments/```
-7. Run Visdom ```python -m visdom.server -port [port_number]```
-8. Train the network. For instance, to use 4 GPUs:
+5. To add flying objects onto downloaded videos, run ```python seg_obj.py```. It crops image patches of objects from PASCAL VOC and save them into ```data/VOCdevkit/VOC2012/ObjSegments/```
+6. Run Visdom ```python -m visdom.server -port [port_number]```
+7. Train the network. For instance, to use 4 GPUs:
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --cuda --n_epoch 20 --decay_epoch 10 --batchSize 4 --n_cpu 8 --modelname './trained_models/FullNet_v5.pth'
 ```
 *consider decrease ```--batchSize``` if the training crashes due to the small GPU memory.
 
-# Trying with other datasets
+## Trying with other datasets
 (will be updated)
 1. Download [SMBV dataset](http://www.cvg.unibe.ch/media/data/datasets/video/jin/slow-motion.zip) (Utilized four test videos)
 2. Download [GoPro dataset](https://drive.google.com/file/d/1SlURvdQsokgsoyTosAaELc4zRjQz9T2U/view?usp=sharing) (We utilized eleven videos)
