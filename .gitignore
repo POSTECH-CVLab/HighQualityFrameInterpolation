@@ -1,0 +1,5 @@
+.DS_Store
+__pycache__
+/data
+/custom
+/models/PWCNet/correlation_package_pytorch1_0/build

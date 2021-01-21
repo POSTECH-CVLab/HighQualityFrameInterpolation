@@ -1,0 +1,20 @@
+Full_Net_pre: only pretrained - PWC is fixed
+
+Full_Net_v3: trained via Vimeo90K septuplet
+Full_Net_v4: trained via Vimeo90K augmented with flying objects (50%) (20 epoch, decay_epoch=10, 7days, final_loss = 0.0416)
+Full_Net_v5: trained via Vimeo90K augmented with flying objects (100%), no alpha-blending, no perceptual loss, with object loss (20 epoch, decay_epoch=10, 7days, final_loss = 0.0992)
+Full_Net_v6: trained via Vimeo90K augmented with flying objects (100%), no alpha-blending, no perceptual loss, with object loss (50 epoch, decay_epoch=8, 16days, final_loss = )
+
+
+
+
+FullNet_tri_v01.pth: best for 448x256		
+FullNet_tri_v0.pth: second best for 448x256
+
+FullNet_tri_SR_v0.pth: best for SR	
+
+
+
+
+FullNet_tri_v1.pth: for triplet training		
+(batch 16, 50 epoch, decay_epoch=8, 4 days, final_loss = )
