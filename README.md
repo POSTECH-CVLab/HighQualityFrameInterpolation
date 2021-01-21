@@ -66,7 +66,9 @@ cd models/PWCNet/correlation_package_pytorch1_0/ && ./build.sh
 6. To add flying objects onto downloaded videos, run ```python seg_obj.py```. It crops image patches of objects from PASCAL VOC and save them into ```data/VOCdevkit/VOC2012/ObjSegments/```
 7. Run Visdom ```python -m visdom.server -port [port_number]```
 8. Train the network. For instance, to use 4 GPUs:
-```CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --cuda --n_epoch 20 --decay_epoch 10 --batchSize 4 --n_cpu 8 --modelname './trained_models/FullNet_v5.pth```
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --cuda --n_epoch 20 --decay_epoch 10 --batchSize 4 --n_cpu 8 --modelname './trained_models/FullNet_v5.pth'
+```
 *consider decrease ```--batchSize``` if the training crashes due to the small GPU memory.
 
 # Trying with other datasets
